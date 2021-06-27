@@ -47,7 +47,7 @@ header h1 {
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.5), 
     rgba(0, 0, 0, 0.5)), 
-    url("./desktopstock.jpg");
+    url("./images/desktopstock.jpg");
 
     height: 20rem;
     background-position: center;
@@ -73,7 +73,7 @@ header h1 {
 }
 
 #AboutMe .bio{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--purple);
     max-width: 65%;
 }
@@ -107,12 +107,9 @@ h2 {
     width: 40rem;
     margin: .5rem;
     flex-grow: 1;
-
-    background-image: 
-    linear-gradient(rgba(193, 172, 248, 0.5), 
-    rgba(85, 78, 99, 0.5)), 
-    url("./desktopstock.jpg");
-
+    background-color: var(--purple);
+    border: solid;
+    border-color: var(--lightpurple);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -121,14 +118,53 @@ h2 {
 
   .card:nth-child(1) {
     width: 81rem;
-    
+    background-image: 
+    linear-gradient(rgba(193, 172, 248, 0.5), 
+    rgba(85, 78, 99, 0.5)),
+    url("./images/backlit-keyboard-stock.jpg");
+  }
+
+  .card:nth-child(2) {
+    background-image: 
+    linear-gradient(rgba(193, 172, 248, 0.5), 
+    rgba(85, 78, 99, 0.5)),
+    url("./images/computer-stock.jpg");
+  }
+
+  .card:nth-child(3) {
+    background-image: 
+    linear-gradient(rgba(193, 172, 248, 0.5), 
+    rgba(85, 78, 99, 0.5)),
+    url("./images/stock-coding-abstract.jpg");
+  }
+
+  .card:nth-child(4) {
+    background-image: 
+    linear-gradient(rgba(193, 172, 248, 0.5), 
+    rgba(85, 78, 99, 0.5)),
+    url("./images/stock-coding.jpg");
+  }
+
+  .card:nth-child(5) {
+    background-image: 
+    linear-gradient(rgba(193, 172, 248, 0.5), 
+    rgba(85, 78, 99, 0.5)),
+    url("./images/digital-laptop-art.jpg");
   }
   
    .portfoliolink {
     font-size: 3rem;
+    max-width: fit-content;
     color: var(--lightpurple);
+    background-color: var(--spaceblue);
+    border-bottom: solid var(--lightpurple);
+    border-right: solid var(--lightpurple);
+    padding: 1rem;
   }
 
+  .portfoliolink:hover {
+    color: #e0a8f3;
+}
 
   #ContactMe {
     padding-left: 5rem;
@@ -147,9 +183,11 @@ h2 {
   @media screen and (max-width: 992px) { 
     #AboutMe, #Work, #ContactMe {
       padding-left: 0rem;
+      padding-right: 0rem;
     }
 
     #Work .portfolio, #ContactMe .info {
       padding-left: 0rem;
+      padding-right: 0rem;
     }
   }
