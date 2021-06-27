@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
+<!-- Adds title, links to stylesheet, and bootstrap for some effects -->
+<!-- As bootstrap was not the main purpose of this assignment, it was not heavily used -->
+
 <head>
     <meta charset="UTF-8" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -9,24 +12,26 @@
     <title>Portfolio - JS</title>
 </head>
 
+<!-- Header -->
+
 <body>
     <header class="header">
         <h1>
             Portfolio.JS
         </h1>
 
+        <!-- Navbar with working links -->
         <nav class="nav">
             <a class="nav-link" href="#AboutMe">About Me</a>
 
             <a class="nav-link" href="#Work">Work</a>
 
             <a class="nav-link" href="#ContactMe">Contact Me</a>
-
-            <a class="nav-link" href="#Resume">Coming Soon!</a>
         </nav>
     </header>
 
-    <figure class="hero" title="hero-image">
+    <!-- Creates hero Image, as well as has its alt attributes -->
+    <figure class="hero" title="hero-image" alt="Stock hi-tech gaming computer">
     </figure>
 
     <figure class="hero-text">
@@ -36,6 +41,7 @@
     </figure>
 
     <main>
+        <!-- AboutMe nav link redirects here, contains bio -->
         <section id="AboutMe">
             <h2>
                 About Me |
@@ -49,51 +55,71 @@
             </p>
         </section>
 
+        <!-- Work section redirects here -->
         <section id="Work">
             <h2>
                 Work |
             </h2>
+            <!-- Creates a portfolio container that is populated with cards, adding cards to this section easily adds them to the page -->
             <section class="portfolio">
                 <div class="card card1">
                     <h4 class="portfoliolink">
+                        <!-- Each card contains a link to an external page that makes up the developers portfolio -->
+                        <!-- Alt atr for images are listed here in the a tag -->
                         <a href="https://jsiraco.github.io/CSS-Cheatsheet/" class="text-decoration-none text-reset"
-                            target="_blank" alt="A link to github pages site that has a CSS cheatsheet the developer made, with a stock photo og a backlit keyboard as a background">CSS Cheatsheet</a>
+                            target="_blank"
+                            alt="A link to github pages site that has a CSS cheatsheet the developer made, with a stock photo og a backlit keyboard as a background">CSS
+                            Cheatsheet</a>
                     </h4>
                 </div>
 
                 <div class="card card2">
                     <h4 class="portfoliolink">
+                        <!-- Alt atr for images are listed here in the a tag -->
                         <a href="https://jsiraco.github.io/prework-about-me/" class="text-decoration-none text-reset"
-                            target="_blank" alt="A link to github pages site about the developer, with a background stock image of a laptop">About Me Prework</a>
+                            target="_blank"
+                            alt="A link to github pages site about the developer, with a background stock image of a laptop">About
+                            Me Prework</a>
                         <h4>
                 </div>
 
                 <div class="card card3">
                     <h4 class="portfoliolink">
+                        <!-- Alt atr for images are listed here in the a tag -->
                         <a href="https://jsiraco.github.io/MyLanding/" class="text-decoration-none text-reset"
-                            target="_blank" alt="A link to github pages site of an empty landing page, with a stock photo of code as a background">My Landing</a>
+                            target="_blank"
+                            alt="A link to github pages site of an empty landing page, with a stock photo of code as a background">My
+                            Landing</a>
                     </h4>
                 </div>
 
                 <div class="card card4">
                     <h4 class="portfoliolink">
-                        <a href="#" class="text-decoration-none text-reset" alt="an empty link with a 'Coming Soon' headline, with a stock photo of code as a background">Coming Soon!</a>
+                        <!-- Alt atr for images are listed here in the a tag -->
+                        <a href="#" class="text-decoration-none text-reset"
+                            alt="an empty link with a 'Coming Soon' headline, with a stock photo of code as a background">Coming
+                            Soon!</a>
                     </h4>
                 </div>
 
                 <div class="card card5">
                     <h4 class="portfoliolink">
-                        <a href="#/" class="text-decoration-none text-reset" alt="an empty link with a 'Coming Soon' headline, with stock art of a laptop and code as a background">Coming Soon!</a>
+                        <!-- Alt atr for images are listed here in the a tag -->
+                        <a href="#/" class="text-decoration-none text-reset"
+                            alt="an empty link with a 'Coming Soon' headline, with stock art of a laptop and code as a background">Coming
+                            Soon!</a>
                     </h4>
                 </div>
             </section>
         </section>
 
+        <!-- ContactMe section Redirects here -->
         <section id="ContactMe">
             <h2>
                 Contact Me |
             </h2>
 
+            <!-- Two contact links are listed here -->
             <address class="info">
                 <a href="mailto: ragnarock.josef@gmail.com" class="text-reset">Email</a>
                 <a href="https://github.com/jsiraco" class="text-reset" target="_blank">GitHub</a>

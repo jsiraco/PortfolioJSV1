@@ -1,24 +1,29 @@
+/* Creates variables that I will use for colors throughout the CSS */
 html {
     --purple: #3d2e42;
     --spaceblue: #33393f;
     --lightpurple: #a77bb6;
+    /* Sets font size to 62.5% so rem can be used more easily */
     font-size: 62.5%;
 }
 
+/* Makes highlighting a new color */
 ::selection {
     background-color: aquamarine;
 }
 
+/* Sets the font for the body */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    flex-wrap: wrap;
 }
 
+/* Styles header */
 header {
     color: var(--spaceblue);
     background-color: var(--spaceblue);
 }
 
+/* Styles the Main h1 'Portfolio.JS (It's a pun, because my initial are JS and .js is a file extension) */
 header h1 {
     font-size: 5rem;
     color: var(--spaceblue);
@@ -32,17 +37,18 @@ header h1 {
     justify-content: flex-end;
 }
 
+/* styles the nav links */
 .nav-link {
-    text-decoration: none;
-    justify-content: space-between;
     padding-bottom: 2rem;
     color: var(--lightpurple);
 }
 
+/* Adds hover to the links */
 .nav-link:hover {
     color: #e0a8f3;
 }
 
+/* Creates a hero image for the header, alt attributes are in HTML */
 .hero {
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.5), 
@@ -56,6 +62,7 @@ header h1 {
     position: relative;
   }
   
+  /* Styles Subtitle for hero image */
   .hero-text h3 {
     text-align: right;
     position: relative;
@@ -66,12 +73,13 @@ header h1 {
     font-style: italic;
   }
 
+/* This section puts flex on the parent */
 #AboutMe {
     padding-left: 5rem;
     display: flex;
     flex-wrap: wrap;
 }
-
+/* Uses a variable to style the bio and sets the max width to center it */
 #AboutMe .bio{
     font-size: 2rem;
     color: var(--purple);
@@ -81,11 +89,11 @@ header h1 {
 h2 {
     color: var(--purple);
     font-size: 4rem;
-    justify-content: flex-start;
     padding-right: 10rem;
     text-align: right;
 }
 
+/* Puts flex on and adds a margin */
 #Work{
     padding-top: 5rem;
     padding-left: 5rem;
@@ -93,6 +101,7 @@ h2 {
     flex-wrap: wrap; 
 }
 
+/* Puts flex on the portfolio cards and adds padding to center them */
 #Work .portfolio {
     padding-left: 10rem;
     padding-right: 10rem;
@@ -102,6 +111,7 @@ h2 {
     width: 75%;
 }
 
+/* Creates card that are distributed with flex box to be used to display my work */
 .card {
     height: 20rem;
     width: 40rem;
@@ -116,6 +126,8 @@ h2 {
     position: relative;
   }
 
+  /* Uses nth-child to make the first child larger than the rest, sets the background image as well, 
+  alt attributes are in the HTML */
   .card:nth-child(1) {
     width: 81rem;
     background-image: 
@@ -124,6 +136,7 @@ h2 {
     url("./images/backlit-keyboard-stock.jpg");
   }
 
+  /* Sets the background image, alt attributes are in the HTML */
   .card:nth-child(2) {
     background-image: 
     linear-gradient(rgba(193, 172, 248, 0.5), 
@@ -131,6 +144,7 @@ h2 {
     url("./images/computer-stock.jpg");
   }
 
+  /* Sets the background image, alt attributes are in the HTML */
   .card:nth-child(3) {
     background-image: 
     linear-gradient(rgba(193, 172, 248, 0.5), 
@@ -138,6 +152,7 @@ h2 {
     url("./images/stock-coding-abstract.jpg");
   }
 
+  /* Sets the background image, alt attributes are in the HTML */
   .card:nth-child(4) {
     background-image: 
     linear-gradient(rgba(193, 172, 248, 0.5), 
@@ -145,6 +160,7 @@ h2 {
     url("./images/stock-coding.jpg");
   }
 
+  /* Sets the background image, alt attributes are in the HTML */
   .card:nth-child(5) {
     background-image: 
     linear-gradient(rgba(193, 172, 248, 0.5), 
@@ -152,6 +168,7 @@ h2 {
     url("./images/digital-laptop-art.jpg");
   }
   
+  /* Adds a link on top of the image that will redirect to a new page, some are placeholders */
    h4.portfoliolink {
     position: relative;
     font-size: 3rem;
@@ -163,10 +180,12 @@ h2 {
     padding: 1rem;
   }
 
+  /* Adds hover effect to image title links */
   h4.portfoliolink:hover {
     color: #e0a8f3;
 }
 
+/* Adds flex to parent */
   #ContactMe {
     padding-left: 5rem;
     padding-top: 5rem;
@@ -174,6 +193,7 @@ h2 {
     flex-wrap: wrap;
   }
 
+  /* Styles contact info */
   #ContactMe .info {
     color: var(--lightpurple);
     padding-top: 1.5rem;
@@ -181,6 +201,7 @@ h2 {
     font-size: 2rem;
   }
   
+  /* When the screen size drops below 992px, paddings are removed to display content along the border of the screen */
   @media screen and (max-width: 992px) { 
     #AboutMe, #Work, #ContactMe {
       padding-left: 0rem;
@@ -190,5 +211,9 @@ h2 {
     #Work .portfolio, #ContactMe .info {
       padding-left: 0rem;
       padding-right: 0rem;
+    }
+/* Moves hero caption to opposite side for better readability */
+    .hero-text h3 {
+      text-align: left;
     }
   }
