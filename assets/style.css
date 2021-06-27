@@ -152,7 +152,8 @@ h2 {
     url("./images/digital-laptop-art.jpg");
   }
   
-   .portfoliolink {
+   h4.portfoliolink {
+    position: relative;
     font-size: 3rem;
     max-width: fit-content;
     color: var(--lightpurple);
@@ -162,7 +163,7 @@ h2 {
     padding: 1rem;
   }
 
-  .portfoliolink:hover {
+  h4.portfoliolink:hover {
     color: #e0a8f3;
 }
 
